@@ -12,8 +12,7 @@ export default function About() {
         <h1 className="text-center p-2">AboutPage</h1>
         {/* Sezione con Benvenuto nella Pagina di Obiettivo Selfie */}
         <section className="flex max-sm:flex-col max-sm:w-full p-4 pb-16">
-          <div className="w-1/2 max-sm:w-full border-2">
-            <p> Carosello tailwind? </p>
+          <div className="w-1/2 max-sm:w-full border-2 overflow-hidden">
             <MsCarousel />
           </div>
           <div className="w-1/2 max-sm:w-full border-2">
