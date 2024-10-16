@@ -1,3 +1,4 @@
+import { MsCarousel } from "../components/Carousel";
 export default function About() {
   // {Già presente in App Header}
   // Questa pagina avrà dentro Slider di foto degli eventi
@@ -13,6 +14,7 @@ export default function About() {
         <section className="flex max-sm:flex-col max-sm:w-full p-4 pb-16">
           <div className="w-1/2 max-sm:w-full border-2">
             <p> Carosello tailwind? </p>
+            <MsCarousel />
           </div>
           <div className="w-1/2 max-sm:w-full border-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
