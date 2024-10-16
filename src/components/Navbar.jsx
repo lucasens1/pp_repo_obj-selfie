@@ -48,7 +48,7 @@ export default function NavBar() {
             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Obiettivo Selfie"
-                src="../../public/obj_selfie_dark.png"
+                src="../../public/obj_selfie_light.png"
                 className="h-16 w-auto"
               />
             </div>
@@ -85,9 +85,9 @@ export default function NavBar() {
               key={item.name}
               as="a"
               href={item.href}
-              aria-current={item.current ? "page" : undefined}
+              aria-current={location.pathname === item.href ? "page" : undefined}
               className={classNames(
-                item.current
+                location.pathname === item.href
                   ? "bg-gray-900 text-white"
                   : "text-gray-300 hover:bg-gray-700 hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium "
