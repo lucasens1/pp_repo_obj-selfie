@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer className="footer flex fixed bottom-0 min-h-max justify-between ms_bg-obj-selfie fixed w-full text-white p-4 max-sm:flex-col">
+      <footer className="footer flex fixed bottom-0 max-h-fit justify-between ms_bg-obj-selfie fixed w-full text-white p-4 max-sm:flex-col">
         <aside>
           <img src="../../public/obj_selfie_dark.png" className="h-12" alt="" />
           <p>

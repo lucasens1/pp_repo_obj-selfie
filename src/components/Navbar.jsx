@@ -25,7 +25,7 @@ export default function NavBar() {
   const location = useLocation();
   return (
     // Navigatore
-    <Disclosure as="nav" className="ms_bg-obj-selfie p-1">
+    <Disclosure as="nav" className="ms_bg-obj-selfie p-1 fixed w-full ">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
