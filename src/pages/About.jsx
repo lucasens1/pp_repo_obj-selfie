@@ -8,18 +8,15 @@ export default function About() {
 
   return (
     <>
-      <div className="pt-10 pb-10">
-        <h1 className="text-center p-2">AboutPage</h1>
+      <div className="pt-20 pb-10">
+        <h1 className="text-center p-2">Chi siamo? </h1>
         {/* Sezione con Benvenuto nella Pagina di Obiettivo Selfie */}
         <section className="flex max-sm:flex-col max-sm:w-full p-4 pb-16">
-          <div className="w-1/2 max-sm:w-full border-2 overflow-hidden">
+          <div className="w-1/2 max-sm:w-full border-2">
             <MsCarousel />
           </div>
           <div className="w-1/2 max-sm:w-full border-2">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            fugit consequuntur vel reprehenderit ab adipisci neque nihil!
-            Delectus laudantium ut vitae soluta cumque? Voluptates libero alias,
-            aperiam exercitationem quia totam!
+            Siamo Pinco e Pallo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus molestias architecto hic nisi illum vel illo quo quidem odio reprehenderit dolore a, odit voluptates totam sit id ab. Voluptatibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam molestias placeat, inventore, facere vel repellat necessitatibus reprehenderit nostrum provident libero impedit officiis distinctio consectetur nesciunt perferendis veniam recusandae maxime odio?
           </div>
         </section>
       </div>

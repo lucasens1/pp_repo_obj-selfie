@@ -24,7 +24,7 @@ export default function NavBar() {
   const location = useLocation();
   return (
     // Navigatore
-    <Disclosure as="nav" className="ms_bg-obj-selfie p-1 fixed w-full ">
+    <Disclosure as="nav" className="ms_bg-obj-selfie p-1 fixed w-full z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -47,12 +47,12 @@ export default function NavBar() {
             <div className="flex flex-shrink-0 items-center">
               <img
                 alt="Obiettivo Selfie"
-                src="../../public/obj_selfie_light.png"
+                src="/obj_selfie_light.png"
                 className="h-16 w-auto"
               />
             </div>
-            <div className="hidden sm:ml-6 sm:block border flex justify-center content-center">
-              <div className="space-x-4 border">
+            <div className="hidden sm:ml-6 sm:block flex justify-center content-center">
+              <div className="space-x-5">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}

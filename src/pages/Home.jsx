@@ -7,7 +7,10 @@ export default function Home(){
 
     return(
         <>
-            <h1>HomePage</h1>
+            <div className="pt-20">
+                <h1>HomePage</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto recusandae, perspiciatis pariatur illo, laudantium temporibus saepe enim harum corrupti maxime cumque obcaecati sapiente fuga veritatis nulla? Aut sunt architecto doloremque?</p>
+            </div>
         </>
     )
 }

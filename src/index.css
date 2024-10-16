@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  font-family: "Raleway", sans-serif;
+}
+
 .ms_bg-obj-selfie{
   background-color: #fa9700;
 }
