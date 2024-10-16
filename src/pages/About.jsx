@@ -1,4 +1,5 @@
 import { MsCarousel } from "../components/Carousel";
+import { ContactForm } from "../components/ContactForm";
 export default function About() {
   // {Già presente in App Header}
   // Questa pagina avrà dentro Slider di foto degli eventi
@@ -15,12 +16,21 @@ export default function About() {
           <div className="w-1/2 max-sm:w-full">
             <MsCarousel />
           </div>
-          <div className="w-1/2 p-2 max-sm:w-full">
-            <div className="border-orange-400 border rounded-xl p-4">
-            Siamo Pinco e Pallo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus molestias architecto hic nisi illum vel illo quo quidem odio reprehenderit dolore a, odit voluptates totam sit id ab. Voluptatibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam molestias placeat, inventore, facere vel repellat necessitatibus reprehenderit nostrum provident libero impedit officiis distinctio consectetur nesciunt perferendis veniam recusandae maxime odio?
+          <div className="w-1/2 max-sm:w-full">
+            <div className="border-orange-400 h-full border rounded-xl p-4">
+              Siamo Pinco e Pallo, Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quasi repellendus molestias architecto hic nisi
+              illum vel illo quo quidem odio reprehenderit dolore a, odit
+              voluptates totam sit id ab. Voluptatibus! Lorem ipsum dolor, sit
+              amet consectetur adipisicing elit. Magnam molestias placeat,
+              inventore, facere vel repellat necessitatibus reprehenderit
+              nostrum provident libero impedit officiis distinctio consectetur
+              nesciunt perferendis veniam recusandae maxime odio?
             </div>
           </div>
         </section>
+        {/* Form di contatto */}
+        <ContactForm/>
       </div>
     </>
   );
