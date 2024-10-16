@@ -17,6 +17,10 @@ const images = [
     alt: "img4",
   },
 ];
+
+const selectedImage = <i className="fa-solid fa-circle mx-1 ms_bounce-effect" />;
+const selectorImage = <i className="fa-regular fa-circle mx-1" />;
+
 export function MsCarousel() {
   const [index, setIndex] = useState(0);
 
@@ -57,11 +61,11 @@ export function MsCarousel() {
         {/* Bottoni */}
         <div className="flex justify-center gap-5">
           <button onClick={showPrev} className="absolute left-0">
-            Precedente
+            <i className="fa-solid fa-arrow-left"></i>
           </button>
           <button onClick={showNext} className="absolute right-0">
             {" "}
-            Successivo{" "}
+            <i className="fa-solid fa-arrow-right"></i>{" "}
           </button>
         </div>
         {/* Miniature */}
@@ -70,9 +74,9 @@ export function MsCarousel() {
             <button
               key={idx}
               onClick={() => onScreen(idx)}
-              className={index === idx ? "text-blue-500" : "text-gray-500"}
+              className={index === idx ? "text-black-500" : "text-gray-500"}
             >
-              {idx + 1}
+              {index === idx ? selectedImage : selectorImage}
             </button>
           ))}
         </div>

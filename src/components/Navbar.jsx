@@ -29,15 +29,15 @@ export default function NavBar() {
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white ms_transition">
               <span className="absolute -inset-0.5" />
               <Bars3Icon
                 aria-hidden="true"
-                className="block h-6 w-6 group-data-[open]:hidden"
+                className="block h-7 w-7 group-data-[open]:hidden"
               />
               <XMarkIcon
                 aria-hidden="true"
-                className="hidden h-6 w-6 group-data-[open]:block"
+                className="hidden h-7 w-7 group-data-[open]:block"
               />
             </DisclosureButton>
             {/* Fine Mobile Button Menu */}
@@ -63,7 +63,7 @@ export default function NavBar() {
                     className={classNames(
                       location.pathname === item.href
                         ? "ms_bg-obj-selfie-1 text-white"
-                        : "text-gray-300 hover:text-white",
+                        : "text-white hover:text-white",
                       "rounded-md px-3 py-2 text-sm font-medium transition duration-150 ease-in-out"
                     )}
                   >
@@ -88,7 +88,7 @@ export default function NavBar() {
               className={classNames(
                 location.pathname === item.href
                   ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                  : "text-white hover:border-b-2 hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium "
               )}
             >

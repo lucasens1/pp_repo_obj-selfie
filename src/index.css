@@ -21,3 +21,7 @@ html{
 .ms_bg-obj-selfie-3{
   background-color: #94bdbf;
 }
+
+.ms_transition{
+  transition: all 0.7s;
+}
