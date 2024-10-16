@@ -45,13 +45,13 @@ export function MsCarousel() {
   }
   return (
     <>
-      <div className="flex flex-col flex-grow-0">
+      <div className="relative">
         {/* Immagine principale */}
-        <img src={images[index].href} alt={images[index].alt} />
+        <img src={images[index].href} alt={images[index].alt} className="h-full w-full object-cover" />
         {/* Bottoni */}
         <div className="flex justify-center gap-5">
-            <button onClick={showPrev}>Precedente</button>
-            <button onClick={showNext}> Successivo </button>
+            <button onClick={showPrev} className="absolute left-0">Precedente</button>
+            <button onClick={showNext} className="absolute right-0"> Successivo </button>
         </div>
         {/* Miniature */}
         <div className="flex justify-center mt-2">
