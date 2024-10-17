@@ -4,6 +4,7 @@ export function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
@@ -15,7 +16,7 @@ export function ContactForm() {
     <div className="border p-1 rounded-2xl shadow-lg mx-auto flex max-sm:flex-col max-w-4xl">
       <form className="p-2 w-1/2 max-sm:w-full">
         <div className="mb-3 text-center flex justify-center gap-2">
-          <h2 className="font-extrabold">Scrivici!</h2>
+          <h2 className="font-extrabold text-xl">Scrivici!</h2>
         </div>
         <div className="mb-3 text-center flex justify-center gap-2">
           <label htmlFor="user-name" className="form-label text-start w-1/3 max-sm:w-1/4">
@@ -60,6 +61,21 @@ export function ContactForm() {
             placeholder="+39"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
+          />
+        </div>
+
+        <div className="mb-3 text-center flex justify-center gap-2">
+          <label htmlFor="user-phone" className="form-label text-start w-1/3 max-sm:w-1/4">
+            Oggetto
+          </label>
+
+          <input
+            type="text"
+            className="form-control w-2/3 max-sm:w-3/4"
+            id="user-phone"
+            placeholder="Oggetto Messaggio"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
           />
         </div>
 

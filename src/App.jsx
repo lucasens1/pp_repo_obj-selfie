@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Components
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WaLink from "./components/whatsapp/WaLink";
 // Pages
 import Home from "./pages/Home";
 import About from './pages/About';
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Router>
+        <WaLink/>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
