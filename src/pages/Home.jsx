@@ -22,6 +22,9 @@ export default function Home() {
             Immortala momenti indimenticabili
           </p>
         </section>
+        <section>
+          {/* Componente con le Recensioni (Mtrn.com) */}
+        </section>
       </div>
     </>
   );

@@ -1,5 +1,7 @@
 import { useState } from "react";
-const images = [
+import CarouselImages from "./carousel_images_obj/CarouselImages";
+
+/* const images = [
   {
     href: "https://fastly.picsum.photos/id/604/200/200.jpg?hmac=qgFjxODI1hMBMfHo68VvLeji-zvG9y-iPYhyW0EkvOs",
     alt: "img1",
@@ -16,17 +18,18 @@ const images = [
     href: "https://fastly.picsum.photos/id/958/200/200.jpg?hmac=WdLUMERHKTLw-sP-eIf1-JlwdIT2ZY12zf4JbnQR_s8",
     alt: "img4",
   },
-];
+]; */
 
 const selectedImage = <i className="fa-solid fa-circle mx-1 ms_bounce-effect" />;
 const selectorImage = <i className="fa-regular fa-circle mx-1" />;
 
 export function MsCarousel() {
   const [index, setIndex] = useState(0);
-
+  /* Converto e prendo i valori presenti nell'oggetto */
+  const imagesCarouselArray = Object.values(CarouselImages);
   function showNext() {
     setIndex((indiceAttuale) => {
-      if (indiceAttuale === images.length - 1) {
+      if (indiceAttuale === imagesCarouselArray.length - 1) {
         return 0;
       } else {
         return indiceAttuale + 1;
@@ -37,7 +40,7 @@ export function MsCarousel() {
   function showPrev() {
     setIndex((indiceAttuale) => {
       if (indiceAttuale === 0) {
-        return (indiceAttuale = images.length - 1);
+        return (indiceAttuale = imagesCarouselArray.length - 1);
       } else {
         return indiceAttuale - 1;
       }
@@ -47,30 +50,32 @@ export function MsCarousel() {
   function onScreen(idx) {
     setIndex(idx);
   }
+
+  /* Funzione di debug */
+  /* function showPhoto() {
+    console.log(event.target.src);
+  } */
+
   return (
     <>
-      <div className="relative">
+      <div>
         {/* Immagine principale */}
-        <div className="flex justify-center">
+        <div className="flex justify-center relative p-2 max-h-96">
           <img
-            src={images[index].href}
-            alt={images[index].alt}
-            className="h-full md:max-w-80 w-full object-cover"
+            src={imagesCarouselArray[index]}
+            alt="Immagine non disponibile"
+            className="md:max-w-80 w-full object-cover"
           />
-        </div>
-        {/* Bottoni */}
-        <div className="flex justify-center gap-5">
-          <button onClick={showPrev} className="absolute left-0">
-            <i className="fa-solid fa-arrow-left"></i>
+          <button onClick={showPrev} className="absolute left-0 bottom-1/2 ml-2">
+            <i className="fa-solid fa-arrow-left text-white p-1"></i>
           </button>
-          <button onClick={showNext} className="absolute right-0">
-            {" "}
-            <i className="fa-solid fa-arrow-right"></i>{" "}
+          <button onClick={showNext} className="absolute right-0 bottom-1/2 mr-2">
+            <i className="fa-solid fa-arrow-right max-sm:text-white p-1"></i>
           </button>
         </div>
-        {/* Miniature */}
+        {/* Puntini */}
         <div className="flex justify-center mt-2">
-          {images.map((_, idx) => (
+          {imagesCarouselArray.map((_, idx) => (
             <button
               key={idx}
               onClick={() => onScreen(idx)}
