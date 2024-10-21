@@ -67,7 +67,7 @@ export function MsCarousel() {
             className="md:max-w-80 w-full object-cover"
           />
           <button onClick={showPrev} className="absolute left-0 bottom-1/2 ml-2">
-            <i className="fa-solid fa-arrow-left text-white p-1"></i>
+            <i className="fa-solid fa-arrow-left max-sm:text-white p-1"></i>
           </button>
           <button onClick={showNext} className="absolute right-0 bottom-1/2 mr-2">
             <i className="fa-solid fa-arrow-right max-sm:text-white p-1"></i>
@@ -75,6 +75,7 @@ export function MsCarousel() {
         </div>
         {/* Puntini */}
         <div className="flex justify-center mt-2">
+          {/* Non mi serve valore dell'array ma solo idx */}
           {imagesCarouselArray.map((_, idx) => (
             <button
               key={idx}

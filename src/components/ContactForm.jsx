@@ -9,11 +9,11 @@ export function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({ name, email, phone, message });
+    console.log({ name, email, phone, title, message });
     // Presi i dati li salvo e li invio al Back-end, andranno a popolare le notifiche dei due proprietari
   };
   return (
-    <div className="border p-1 rounded-2xl shadow-lg mx-auto flex max-sm:flex-col max-w-4xl">
+    <div className="border p-1 rounded-2xl shadow-lg mx-auto flex max-sm:flex-col max-w-3xl">
       <form className="p-2 w-1/2 max-sm:w-full">
         <div className="mb-3 text-center flex justify-center gap-2">
           <h2 className="font-extrabold text-xl">Scrivici!</h2>
@@ -103,7 +103,7 @@ export function ContactForm() {
           </button>
         </div>
       </form>
-      <div className="text-center w-1/2 max-sm:w-full pb-2">
+      <div className="text-center w-1/2 max-sm:w-full mt-4 p-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis, vel
         perferendis eaque dolorum aut esse, quasi nesciunt quaerat deserunt,
         similique impedit voluptates necessitatibus maiores officia aperiam

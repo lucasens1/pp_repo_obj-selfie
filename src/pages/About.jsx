@@ -12,11 +12,11 @@ export default function About() {
       <div className="pt-20 pb-10">
         <h1 className="text-center text-xl font-extrabold p-2">Chi siamo? </h1>
         {/* Sezione con Benvenuto nella Pagina di Obiettivo Selfie */}
-        <section className="flex max-sm:flex-col max-sm:w-full p-4 pb-16">
-          <div className="w-1/2 max-sm:w-full">
+        <section className="flex justify-center max-sm:flex-col max-sm:w-full p-4 pb-16">
+          <div className="w-1/3 max-sm:w-full">
             <MsCarousel />
           </div>
-          <div className="w-1/2 max-sm:w-full pt-3">
+          <div className="w-1/3 max-sm:w-full pt-3">
             <div className="border-orange-400 h-full border rounded-xl p-4">
               Siamo Pinco e Pallo, Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Quasi repellendus molestias architecto hic nisi
