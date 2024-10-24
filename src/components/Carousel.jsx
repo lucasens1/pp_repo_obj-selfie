@@ -80,7 +80,7 @@ export function MsCarousel() {
             <button
               key={idx}
               onClick={() => onScreen(idx)}
-              className={index === idx ? "text-black-500" : "text-gray-500"}
+              /* className={index === idx ? "text-black" : "text-gray-500"} */
             >
               {index === idx ? selectedImage : selectorImage}
             </button>

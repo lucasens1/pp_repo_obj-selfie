@@ -8,15 +8,15 @@ export default function Home() {
 
   return (
     <>
-      <div className="pt-16 flex justify-center">
-        <div className="relative w-1/3">
+      <div className="pt-16 flex justify-center max-sm:flex-col">
+        <div className="relative w-1/3 max-sm:w-full">
           <img src={partyImage} alt="" className="w-full max-h-96 object-cover" />
           {/* <img src="../assets/carousel_images/wally1.jpg" alt="" /> Percorso Relativo non va! import Ok! */}
           <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
             <h1 className="text-white text-3xl font-bold">Photo Booth</h1>
           </div>
         </div>
-        <section className="p-4 w-1/3">
+        <section className="p-4 w-1/3 max-sm:w-full">
           <p className="text-lg">
             Rendi unica ogni festa! <br />
             Immortala momenti indimenticabili Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quaerat minima aliquid quo quisquam eveniet? Iusto ex corrupti facilis dignissimos, ab asperiores culpa voluptas officiis blanditiis provident alias tenetur neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, sapiente. Autem temporibus quaerat tempore ullam, quia ut inventore vel saepe omnis eum sunt assumenda exercitationem, explicabo optio molestiae magnam magni!

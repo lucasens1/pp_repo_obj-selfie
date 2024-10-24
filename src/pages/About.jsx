@@ -18,7 +18,7 @@ export default function About() {
           </div>
           <div className="w-1/3 max-sm:w-full pt-3">
             <div className="border-orange-400 h-full border rounded-xl p-4">
-              Siamo Pinco e Pallo, Lorem ipsum dolor sit amet consectetur
+              Siamo Martina e Luca, Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Quasi repellendus molestias architecto hic nisi
               illum vel illo quo quidem odio reprehenderit dolore a, odit
               voluptates totam sit id ab. Voluptatibus! Lorem ipsum dolor, sit

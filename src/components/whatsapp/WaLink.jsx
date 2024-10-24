@@ -16,8 +16,7 @@ export default function WaLink() {
         <img src={WaIcon} alt="" className="mr-1" />
         <span>Chatta con noi!</span>
       </a>
-      {/* Whatsapp Icon From ! 
-            <a href="https://www.freepik.com/icon/whatsapp_2504957#fromView=keyword&page=1&position=3&uuid=888fe9bd-d1f8-4456-86e2-1489a602ee7a">Icon by Ruslan Babkin</a> */}
+      {/* Whatsapp Icon From ! <a href="https://www.freepik.com/icon/whatsapp_2504957#fromView=keyword&page=1&position=3&uuid=888fe9bd-d1f8-4456-86e2-1489a602ee7a">Icon by Ruslan Babkin</a> */}
     </div>
   );
 }

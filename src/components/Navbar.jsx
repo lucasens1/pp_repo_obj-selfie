@@ -14,7 +14,7 @@ const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "Su di noi", href: "/about", current: false },
   { name: "Contattaci", href: "/contact", current: false },
-  { name: "Admin", href:"/admin", current:false }
+  { name: "Admin", href:"/admin", current:false } /* Rotta che conduce al BE */
 ];
 
 function classNames(...classes) {
