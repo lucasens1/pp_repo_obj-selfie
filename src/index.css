@@ -25,3 +25,7 @@ html{
 .ms_transition{
   transition: all 0.7s;
 }
+
+.z-9999{
+  z-index: 9999;
+}

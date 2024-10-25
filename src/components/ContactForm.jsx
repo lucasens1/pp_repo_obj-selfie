@@ -163,7 +163,7 @@ export function ContactForm() {
             className="form-control w-2/3 p-1 max-sm:w-3/4"
             id="message"
             rows="3"
-            placeholder="Inserisci un messaggio"
+            placeholder="Salve, vorremmo avere informazioni sui vostri pacchetti nozze e altri servizi. Attendiamo la vostra risposta."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>

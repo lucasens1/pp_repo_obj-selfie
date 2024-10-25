@@ -8,8 +8,8 @@ export function ReviewCard({ autore, voto, titolo, testo }){
                 <h3 className="font-bold text-lg text-center">{autore}</h3>
                 <div className="flex align-center justify-center">{stelle}</div>
             </div>
-            <p className="font-semibold">{titolo}</p>
-            <p className="font-light">{testo}</p>
+            <p className="font-semibold text-xl">{titolo}</p>
+            <p className="font-light text-lg">{testo}</p>
         </div>
     )
 }

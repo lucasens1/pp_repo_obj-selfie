@@ -3,9 +3,9 @@ import { ReviewCard } from "./ReviewCard"
 import Slider from "react-slick";
 export function RecensioniUtenti(){
     const settings = {
-        dots: true,
+        dots:true,
         infinite: true,
-        speed: 500,
+        speed: 400,
         slidesToShow: 1, // Mostra una recensione alla volta
         slidesToScroll: 1,
         autoplay: true, // Abilita l'autoplay
