@@ -73,7 +73,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="border p-1 rounded-2xl shadow-lg mx-auto flex max-sm:flex-col max-w-3xl">
+    <div className="border p-1 rounded-2xl shadow-3xl mx-auto flex max-sm:flex-col max-w-3xl">
       <form className="p-2 w-1/2 max-sm:w-full">
         <div className="mb-3 text-center flex justify-center gap-2">
           <h2 className="font-extrabold text-xl">Scrivici!</h2>
@@ -81,14 +81,14 @@ export function ContactForm() {
         <div className="mb-3 text-center flex justify-center gap-2">
           <label
             htmlFor="name"
-            className="form-label text-start w-1/3 max-sm:w-1/4"
+            className="form-label text-start w-1/3 p-1 max-sm:w-1/4"
           >
             Nome
           </label>
 
           <input
             type="text"
-            className="form-control w-2/3 max-sm:w-3/4"
+            className="form-control p-1 w-2/3 max-sm:w-3/4"
             id="name"
             aria-describedby="emailHelp"
             placeholder="Inserisci il tuo nome"
@@ -100,14 +100,14 @@ export function ContactForm() {
         <div className="mb-3 text-center flex justify-center gap-2">
           <label
             htmlFor="email"
-            className="form-label text-start w-1/3 max-sm:w-1/4"
+            className="form-label text-start p-1 w-1/3 max-sm:w-1/4"
           >
             E-mail
           </label>
 
           <input
             type="email"
-            className="form-control w-2/3 max-sm:w-3/4"
+            className="form-control w-2/3 p-1 max-sm:w-3/4"
             id="email"
             placeholder="Inserisci la tua mail"
             value={email}
@@ -118,14 +118,14 @@ export function ContactForm() {
         <div className="mb-3 text-center flex justify-center gap-2">
           <label
             htmlFor="phone"
-            className="form-label text-start w-1/3 max-sm:w-1/4"
+            className="form-label text-start p-1 w-1/3 max-sm:w-1/4"
           >
             Telefono
           </label>
 
           <input
             type="text"
-            className="form-control w-2/3 max-sm:w-3/4"
+            className="form-control w-2/3 p-1 max-sm:w-3/4"
             id="phone"
             placeholder="+39"
             value={phone}
@@ -136,14 +136,14 @@ export function ContactForm() {
         <div className="mb-3 text-center flex justify-center gap-2">
           <label
             htmlFor="subject"
-            className="form-label text-start w-1/3 max-sm:w-1/4"
+            className="form-label text-start p-1 w-1/3 max-sm:w-1/4"
           >
             Oggetto
           </label>
 
           <input
             type="text"
-            className="form-control w-2/3 max-sm:w-3/4"
+            className="form-control w-2/3 p-1 max-sm:w-3/4"
             id="subject"
             placeholder="Oggetto Messaggio"
             value={subject}
@@ -154,13 +154,13 @@ export function ContactForm() {
         <div className="mb-3 text-center flex justify-center gap-2">
           <label
             htmlFor="message"
-            className="form-label text-start w-1/3 max-sm:w-1/4"
+            className="form-label text-start p-1 w-1/3 max-sm:w-1/4"
           >
             Messaggio
           </label>
 
           <textarea
-            className="form-control w-2/3 max-sm:w-3/4"
+            className="form-control w-2/3 p-1 max-sm:w-3/4"
             id="message"
             rows="3"
             placeholder="Inserisci un messaggio"
@@ -171,7 +171,7 @@ export function ContactForm() {
         <div className="mb-3 text-center flex flex-wrap justify-center gap-2">
           <button
             type="submit"
-            className="bg-gray-800 text-white border-0 p-2 text-center"
+            className="bg-slate-900 rounded-xl px-4 py-2 text-lg text-white border-0 text-center"
             onClick={handleSubmit}
           >
             Contattaci
@@ -179,12 +179,7 @@ export function ContactForm() {
         </div>
       <div className=" border-1 text-center">{renderMessage()}</div>
       </form>
-      <div className="text-center w-1/2 max-sm:w-full mt-4 p-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis, vel
-        perferendis eaque dolorum aut esse, quasi nesciunt quaerat deserunt,
-        similique impedit voluptates necessitatibus maiores officia aperiam
-        minus numquam ipsam?
-        <br />
+      <div className="text-center w-1/2 max-sm:w-full md:flex md:pt-10 md:text-white mt-1 ms_bg-obj-selfie shadow-xl rounded-xl font-semibold p-2">
         <i>
           Facci sapere le tue preferenze, in che località ti possiamo tornare
           utili? Qual è il tema della festa? Quanti sono gli invitati?{" "}

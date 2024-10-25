@@ -12,8 +12,8 @@ export default function Home() {
         <div className="relative w-1/3 max-sm:w-full">
           <img src={partyImage} alt="" className="w-full max-h-96 object-cover" />
           {/* <img src="../assets/carousel_images/wally1.jpg" alt="" /> Percorso Relativo non va! import Ok! */}
-          <div className="absolute inset-0 bg-black bg-opacity-25 flex items-center justify-center">
-            <h1 className="text-white text-3xl font-bold">Photo Booth</h1>
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+            <h1 className="text-white text-3xl font-light italic">Obiettivo selfie!</h1>
           </div>
         </div>
         <section className="p-4 w-1/3 max-sm:w-full">
