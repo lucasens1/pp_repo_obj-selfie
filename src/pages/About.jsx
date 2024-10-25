@@ -12,7 +12,7 @@ export default function About() {
       <div className="pt-20 pb-10">
         <h1 className="text-center text-xl font-extrabold p-2">Chi siamo? </h1>
         {/* Sezione con Benvenuto nella Pagina di Obiettivo Selfie */}
-        <section className="flex justify-center max-sm:flex-col max-sm:w-full p-4 pb-12 ">
+        <section className="flex justify-center max-sm:flex-col max-sm:w-full p-4 pb-12 md:max-h-96">
           <div className="w-1/3 max-sm:w-full pt-2">
             <MsCarousel />
           </div>
@@ -22,10 +22,7 @@ export default function About() {
               adipisicing elit. Quasi repellendus molestias architecto hic nisi
               illum vel illo quo quidem odio reprehenderit dolore a, odit
               voluptates totam sit id ab. Voluptatibus! Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Magnam molestias placeat,
-              inventore, facere vel repellat necessitatibus reprehenderit
-              nostrum provident libero impedit officiis distinctio consectetur
-              nesciunt perferendis veniam recusandae maxime odio?
+              amet consectetur adipisicing elit. 
             </div>
           </div>
         </section>

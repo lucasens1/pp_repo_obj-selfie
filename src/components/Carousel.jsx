@@ -64,13 +64,13 @@ export function MsCarousel() {
           <img
             src={imagesCarouselArray[index]}
             alt="Immagine non disponibile"
-            className="md:max-w-80 w-full object-cover"
+            className="ms_fixed-h w-full object-cover p-1"
           />
           <button onClick={showPrev} className="absolute left-0 bottom-1/2 ml-2">
-            <i className="fa-solid fa-arrow-left max-sm:text-white p-1"></i>
+            <i className="fa-solid text-3xl fa-arrow-left text-slate-900 -translate-x-3 translate-y-3"></i>
           </button>
           <button onClick={showNext} className="absolute right-0 bottom-1/2 mr-2">
-            <i className="fa-solid fa-arrow-right max-sm:text-white p-1"></i>
+            <i className="fa-solid text-3xl fa-arrow-right text-slate-900 translate-x-3 translate-y-3"></i>
           </button>
         </div>
         {/* Puntini */}

@@ -37,3 +37,8 @@ html{
 .shadow-bottom {
   box-shadow: 0 4px 8px rgba(2, 2, 2, 0.65); /* Ombra al lato inferiore */
 }
+
+.ms_fixed-h{
+  height: 270px;
+  width: 320px;
+}
