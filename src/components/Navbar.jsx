@@ -25,7 +25,7 @@ export default function NavBar() {
   const location = useLocation();
   return (
     // Navigatore
-    <Disclosure as="nav" className="ms_bg-obj-selfie p-1 fixed w-full z-50">
+    <Disclosure as="nav" className="ms_bg-obj-selfie p-1 fixed w-full z-50 shadow-bottom">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -63,7 +63,7 @@ export default function NavBar() {
                     }
                     className={classNames(
                       location.pathname === item.href
-                        ? "ms_bg-obj-selfie-1 text-white"
+                        ? "bg-slate-900 text-white"
                         : "text-white hover:text-white",
                       "rounded-md px-3 py-2 text-sm font-medium transition duration-150 ease-in-out"
                     )}
@@ -88,7 +88,7 @@ export default function NavBar() {
               aria-current={location.pathname === item.href ? "page" : undefined}
               className={classNames(
                 location.pathname === item.href
-                  ? "bg-gray-900 text-white"
+                  ? "bg-slate-900 text-white"
                   : "text-white hover:border-b-2 hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium "
               )}

@@ -20,8 +20,8 @@ import CarouselImages from "./carousel_images_obj/CarouselImages";
   },
 ]; */
 
-const selectedImage = <i className="fa-solid fa-circle mx-1 ms_bounce-effect" />;
-const selectorImage = <i className="fa-regular fa-circle mx-1" />;
+const selectedImage = <i className="fa-solid fa-circle mx-1 text-slate-900" />;
+const selectorImage = <i className="fa-regular fa-circle mx-1 text-slate-900" />;
 
 export function MsCarousel() {
   const [index, setIndex] = useState(0);

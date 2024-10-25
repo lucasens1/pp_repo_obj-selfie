@@ -29,3 +29,11 @@ html{
 .z-9999{
   z-index: 9999;
 }
+
+.ms_pt-18{
+  padding-top: 72px;
+}
+
+.shadow-bottom {
+  box-shadow: 0 4px 8px rgba(2, 2, 2, 0.65); /* Ombra al lato inferiore */
+}
