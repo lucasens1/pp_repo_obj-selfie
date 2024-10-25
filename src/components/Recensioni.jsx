@@ -1,14 +1,23 @@
 import { recensioni } from "./utils/utils"
 import { ReviewCard } from "./ReviewCard"
+import Slider from "react-slick";
 export function RecensioniUtenti(){
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1, // Mostra una recensione alla volta
+        slidesToScroll: 1,
+        autoplay: true, // Abilita l'autoplay
+        autoplaySpeed: 3000, // Velocità di autoplay
+    };
+
     return(
         <> 
         <div className="flex flex-col p-4 max-sm:w-full w-1/2 mx-auto">
-            <h2 className="text-xl bg-slate-900 text-center text-white rounded-t-xl p-2">Scopri cosa dicono di noi 😁 </h2>
-            <div className="w-full mt-10">
-                {/* Card -> tutto come prop */}
-                { recensioni.map((recensione,idx) => {
-                    return(
+            <h2 className="text-2xl text-center text-slate-900 underline underline-offset-8 rounded-t-xl p-2">Scopri cosa dicono di noi 😁 </h2>
+            <Slider {...settings} className="w-full mt-4">
+                { recensioni.map((recensione,idx) => (   
                         <ReviewCard
                             key={idx}
                             autore={recensione.autore}
@@ -16,9 +25,8 @@ export function RecensioniUtenti(){
                             titolo={recensione.titolo}
                             testo={recensione.testo}
                         />
-                    )
-                }) }
-            </div>
+                ))}
+            </Slider>
         </div>
         </>
     )
