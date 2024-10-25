@@ -25,9 +25,7 @@ export default function Home() {
         </section>
       </div>
         <section className="w-full my-10">
-          {/* Componente con le Recensioni (Mtrn.com) */}
           <RecensioniUtenti />
-          {/* Card recensioni */}
         </section>
     </>
   );
