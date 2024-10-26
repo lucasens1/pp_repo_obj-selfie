@@ -49,7 +49,7 @@ export default function Home() {
             sarà un ricordo da custodire gelosamente! Mettetevi in posa, al
             resto penseranno loro e il loro Wolly! Obiettivo Selfie è qui per
             trasformare il vostro matrimonio in un evento straordinario.
-            3, 2 ,1... <strong>selfie!</strong><span className="text-2xl">📸</span>
+            <span className="block"><i>3, 2 ,1...</i> <strong className="text-2xl">selfie!</strong><span className="text-2xl">📸</span></span>
           </p>
         </section>
         <div className="relative w-1/3 max-sm:w-full">
