@@ -6,6 +6,7 @@ import {
   MenuButton,
   MenuItem,
   MenuItems,
+  Transition,
 } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -14,7 +15,11 @@ const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "Su di noi", href: "/about", current: false },
   { name: "Contattaci", href: "/contact", current: false },
-  { name: "Admin", href:"http://localhost:8000/admin", current:false } /* Rotta che conduce al BE */
+  {
+    name: "Admin",
+    href: "http://localhost:8000/admin",
+    current: false,
+  } /* Rotta che conduce al BE */,
 ];
 
 function classNames(...classes) {
@@ -25,7 +30,10 @@ export default function NavBar() {
   const location = useLocation();
   return (
     // Navigatore
-    <Disclosure as="nav" className="ms_bg-obj-selfie p-1 fixed w-full z-50 shadow-bottom">
+    <Disclosure
+      as="nav"
+      className="ms_bg-obj-selfie p-1 fixed w-full z-50 shadow-bottom"
+    >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -78,26 +86,39 @@ export default function NavBar() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={location.pathname === item.href ? "page" : undefined}
-              className={classNames(
-                location.pathname === item.href
-                  ? "bg-slate-900 text-white"
-                  : "text-white hover:border-b-2 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium "
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
-          ))}
-        </div>
-      </DisclosurePanel>
+      <Transition
+        as={Disclosure.Panel}
+        enter="transition duration-200 ease-in-out"
+        enterFrom="transform scale-y-0 opacity-0"
+        enterTo="transform scale-y-100 opacity-100"
+        leave="transition duration-200 ease-in-out"
+        leaveFrom="transform scale-y-100 opacity-100"
+        leaveTo="transform scale-y-0 opacity-0"
+        className="sm:hidden"
+      >
+        <DisclosurePanel className="sm:hidden">
+          <div className="space-y-1 px-2 pb-3 pt-2">
+            {navigation.map((item) => (
+              <DisclosureButton
+                key={item.name}
+                as="a"
+                href={item.href}
+                aria-current={
+                  location.pathname === item.href ? "page" : undefined
+                }
+                className={classNames(
+                  location.pathname === item.href
+                    ? "bg-slate-900 text-white"
+                    : "text-white hover:border-b-2 hover:text-white",
+                  "block rounded-md px-3 py-2 text-base font-medium "
+                )}
+              >
+                {item.name}
+              </DisclosureButton>
+            ))}
+          </div>
+        </DisclosurePanel>
+      </Transition>
     </Disclosure>
   );
 }
