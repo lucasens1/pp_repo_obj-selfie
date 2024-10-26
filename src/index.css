@@ -42,3 +42,7 @@ html{
   height: 270px;
   width: 320px;
 }
+
+.ms_max-w{
+  max-width: 1100px;
+}

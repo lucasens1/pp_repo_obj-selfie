@@ -45,7 +45,7 @@ export default function Home() {
             <strong>Obiettivo Selfie</strong> è pronto a portare un'ondata di
             divertimento, creatività e unicità al vostro matrimonio, grazie
             anche al super staff altamente qualificato, il quale accompagnerà
-            ogni vostro invitato e voi in ogni momento del servizio! Ogni scatto
+            ogni vostro invitato e voi in ogni momento del servizio!Ogni scatto
             sarà un ricordo da custodire gelosamente! Mettetevi in posa, al
             resto penseranno loro e il loro Wolly! Obiettivo Selfie è qui per
             trasformare il vostro matrimonio in un evento straordinario.

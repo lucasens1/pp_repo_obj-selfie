@@ -15,6 +15,7 @@ const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "Su di noi", href: "/about", current: false },
   { name: "Contattaci", href: "/contact", current: false },
+  { name: 'Servizi', href: '/services', current:false},
   {
     name: "Admin",
     href: "http://localhost:8000/admin",
