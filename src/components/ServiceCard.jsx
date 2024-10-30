@@ -8,8 +8,8 @@ export function ServiceCard({ titolo, descrizione, punti, imgPath }) {
             <p className="text-md font-normal my-2">{descrizione}</p>
             <hr />
             <ul className="font-light text-md my-4">
-                { punti.map((punto) => {
-                    return(<li>- {punto}</li>)            
+                { punti.map((punto, idx) => {
+                    return(<li key={idx}>- {punto}</li>)            
                 })}
             </ul>
         </div>
